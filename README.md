@@ -1,5 +1,50 @@
 <div align="center">
-  
+
+```mermaid
+mindmap
+  root((DAST))
+
+    Discovery
+      Crawling
+      Spidering
+      Endpoint Enumeration
+
+    Testing
+      Fuzzing
+      Injection Testing
+      Authentication Testing
+      Session Testing
+
+    Analysis
+      HTTP Responses
+      Error Messages
+      Behavioral Analysis
+
+    Vulnerabilities
+      SQL Injection
+      XSS
+      CSRF
+      IDOR
+      Authentication Bypass
+      Session Fixation
+
+    Reporting
+      Severity
+      CVSS
+      Remediation
+
+    Integration
+      CI CD
+      DevSecOps
+      Bug Tracking
+
+    Tools
+      OWASP ZAP
+      Burp Suite
+      Acunetix
+      Nessus WAS
+```
+
 # **`Awesome`** Dynamic Application Security Testing ([DAST](https://wikipedia.org/wiki/Dynamic_application_security_testing)) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
 
@@ -15,6 +60,33 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+```mermaid
+flowchart LR
+
+A[Source Code]
+
+--> B[SAST]
+
+B --> C[AST]
+B --> D[CFG]
+B --> E[Taint Analysis]
+
+A --> F[Running Application]
+
+F --> G[DAST]
+
+G --> H[Crawling]
+G --> I[Fuzzing]
+G --> J[Payload Injection]
+
+E --> K[Static Findings]
+J --> L[Runtime Findings]
+
+style A fill:#f39c12,color:#fff
+style B fill:#3498db,color:#fff
+style F fill:#2ecc71,color:#fff
+style G fill:#e74c3c,color:#fff
+```
 
 ## 📖 Contents
 - [My Awesome Lists](#my-awesome-lists)
